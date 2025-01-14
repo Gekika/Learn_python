@@ -62,3 +62,8 @@ can install your required package by specifying the package's name sample:
  python -m pip freeze - gives the versions of installed packages and you 
  can create a list of them and save it as requirements.txt file and ship
  it with the program to enable swift / smooth installation.
+ sample of using freeze to create a req.txt using freeze
+ python -m pip freeze > requirements.txt
+ cat requirements.txt
+
+ now the user can install all the required packages using the install -r
