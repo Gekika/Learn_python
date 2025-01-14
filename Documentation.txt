@@ -10,5 +10,15 @@ What is covered in this are the following:
         Classes
         Standard Library
         Virtual Environments and Packages
-        
 
+
+
+
+
+
+   ----------------------------------------------------------------------------------   VIRTUAL ENVIRONMENTS AND PACKAGES  -------------------------------------------------------------------------------------------------------------
+We find sometimes python applications use packages and modules that dont come as part of the standard Library
+One Python installation may not be able to meet allt his requirements!
+Versions may conflict and and so virtual Environments come to our rescue.
+Virtual Environments are self contained directory trees' that contain a python installation for a particular version of python plus a number of packages
+think of it as a small complete computer inside your computer where you can install various packages and use them without affecting the global installed version 
