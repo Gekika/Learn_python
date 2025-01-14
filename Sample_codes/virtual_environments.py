@@ -3,3 +3,6 @@
 # Example in my Linux computer to create a virtual env called Sample one I run the following command:
 
 # python3 -m venv Sample_one 
+ # To activate the virtual environment, you can use the following command:
+
+# source Sample_one/bin/activate
