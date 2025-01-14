@@ -1,0 +1,14 @@
+So here I will document how I learn PYTHON using the documntation in a very fun way 
+What is covered in this are the following:
+        Python interpreter
+        Python data types
+        Control Flow tools
+        Data Structures
+        Modules
+        Input / Output
+        Errors and Exceptions
+        Classes
+        Standard Library
+        Virtual Environments and Packages
+        
+
