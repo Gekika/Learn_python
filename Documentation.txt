@@ -17,8 +17,48 @@ What is covered in this are the following:
 
 
    ----------------------------------------------------------------------------------   VIRTUAL ENVIRONMENTS AND PACKAGES  -------------------------------------------------------------------------------------------------------------
-We find sometimes python applications use packages and modules that dont come as part of the standard Library
+
+We find sometimes python applications use packages and modules that dont 
+come as part of the standard Library
+
 One Python installation may not be able to meet allt his requirements!
+
 Versions may conflict and and so virtual Environments come to our rescue.
-Virtual Environments are self contained directory trees' that contain a python installation for a particular version of python plus a number of packages
-think of it as a small complete computer inside your computer where you can install various packages and use them without affecting the global installed version 
+
+Virtual Environments are self contained directory trees' that contain a 
+python installation for a particular version of python plus a number of 
+packages
+
+think of it as a small complete computer inside your computer where you
+ can install various packages and use them without affecting the global 
+ installed version 
+
+creating a virtual environment
+# python3 -m venv Sample_one
+
+then after creating a virtual environment we activate it through:
+Source Name_of_virtual/bin/activate
+sample: source    Sample_one/bin/activate
+
+Managing Packages with pip
+Nw after creating the VE oyu can install, upgrade, remove packages using 
+a program called pip
+
+by default pip installs packages from  the Python Package Index and you 
+can install your required package by specifying the package's name sample:
+ python -m pip install package_name
+
+ to upgrade an installed version 
+
+ some of the sub commands
+ python -m pip install package_name
+
+ python -m pip uninstall package_name
+
+ python -m pip show package_name
+
+ python -m pip list 
+
+ python -m pip freeze - gives the versions of installed packages and you 
+ can create a list of them and save it as requirements.txt file and ship
+ it with the program to enable swift / smooth installation.
