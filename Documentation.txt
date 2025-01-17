@@ -79,7 +79,10 @@ can install your required package by specifying the package's name sample:
  now the user can install all the required packages using the install -r
 
    ----------------------------------------------------------------------------------   CONTROL FLOW TOOLS  -------------------------------------------------------------------------------------------------------------
+
 if statements
+==============
+
 Sample:
 
 y = int(input("Enter the dimension of your shape"))
@@ -92,6 +95,82 @@ elif x==2:
   an if...elif...elif sequence is a substitute for teh switch or case statements in other languages
 
 
-  for statements
+for statements
+==============
 
   this iterates in any sequence be it (a list or string)in the order that they appear
+  words = ["Martin" , 'Go' , 'into' ,'the ','woods']
+for w in words:
+    print(w,len(w))
+
+
+# Code that modifies a collection while iterating over the same colection, a copy is created 1st
+users = {'Ken': 'active' ,'Martin': 'inactive' ,'Joyce': 'active' ,'Mary': 'inactive' ,'Brenda': 'active' , }
+
+# iterate over the copy 
+for user, status in users.copy().items():
+        if statuswords = ["Martin" , 'Go' , 'into' ,'the ','woods']
+for w in words:
+    print(w,len(w))
+
+
+# Code that modifies a collection while iterating over the same colection, a copy is created 1st
+users = {'Ken': 'active' ,'Martin': 'inactive' ,'Joyce': 'active' ,'Mary': 'inactive' ,'Brenda': 'active' , }
+
+# iterate over the copy 
+for user, status in users.copy().items():
+        if status == 'inactive':
+            del users[user]
+            print(users)
+ == 'inactive':
+            del users[user]
+            print(users)
+
+
+The range function 
+===================
+If need be to iterate over a sequence of numbers range()function comes in, it generates arithmetic progressions
+The end point is not included
+for i in range(5):
+   print(i)
+
+we can iterate over indices by combining the range and len fn 
+users = ["Martin" , 'Go' , 'into' ,'the ','woods']
+for us in range(len(users)):
+     print(us, users[us])
+the object retured by the range function behaves as if its a list but it is not!!
+this example  shows it better:
+sum(range(4)) == 0+1+2+3
+6
+
+
+break / continue / else
+=======================
+The break statement breaks out of the innermost enclosing foror while loop
+In eithe a for /while loop the else is not executes of the loop is terminated by a break
+
+
+pass statement
+==============
+this does nothing but is needed when a statement is required syntactically but the program requires  no applications
+oftenly used when writng code and you ned thinking sample:
+def initlog(*args):
+   pass # remember to implement this
+
+
+
+match statement
+===============
+A match statementtakes an expression and compares its value to successive patterns given as one or more blocks only
+the 1st pattern that matches gets executed ...more of like the switch in C,Java
+sample
+def http_error(status):
+  match status:
+      case 400:
+        return "Bad Request"
+      case 404:
+        return "try again"
+      case 418:
+        return "not found"
+      case _:
+      return "Check your nternet"
