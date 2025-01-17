@@ -1,15 +1,25 @@
 So here I will document how I learn PYTHON using the documntation in a very fun way 
 What is covered in this are the following:
+
         Python interpreter
+
         Python data types
+
         Control Flow tools
+
         Data Structures
+
         Modules
+
         Input / Output
+
         Errors and Exceptions
+
         Classes
+
         Standard Library
-        Virtual Environments and Packages
+
+        Virtual Environments and Packages 🗸
 
 
 
@@ -67,3 +77,21 @@ can install your required package by specifying the package's name sample:
  cat requirements.txt
 
  now the user can install all the required packages using the install -r
+
+   ----------------------------------------------------------------------------------   CONTROL FLOW TOOLS  -------------------------------------------------------------------------------------------------------------
+if statements
+Sample:
+
+y = int(input("Enter the dimension of your shape"))
+x = int(input("1.Square 2.Rectangle"))
+
+if x == 1:
+    print(f"The area of sqaure is: {y*4}")
+elif x==2:
+    print(f"The area of Rectangle is {y*y}")
+  an if...elif...elif sequence is a substitute for teh switch or case statements in other languages
+
+
+  for statements
+
+  this iterates in any sequence be it (a list or string)in the order that they appear
