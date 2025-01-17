@@ -14,3 +14,24 @@ elif x==2:
 words = ["Martin" , 'Go' , 'into' ,'the ','woods']
 for w in words:
     print(w,len(w))
+
+
+# Code that modifies a collection while iterating over the same colection, a copy is created 1st
+users = {'Ken': 'active' ,'Martin': 'inactive' ,'Joyce': 'active' ,'Mary': 'inactive' ,'Brenda': 'active' , }
+
+# iterate over the copy 
+for user, status in users.copy().items():
+        if status == 'inactive':
+            del users[user]
+            print(users)
+
+
+# the range function
+for i in range(20):
+     print(i)
+
+
+
+users = ["Martin" , 'Go' , 'into' ,'the ','woods']
+for us in range(len(users)):
+     print(us, users[us])
