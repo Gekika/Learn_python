@@ -1,7 +1,7 @@
-So here I will document how I learn PYTHON using the documntation in a very fun way 
+So here I will document how I learn PYTHON using the documentation in a very fun way 
 What is covered in this are the following:
 
-        Python interpreter
+        Python interpreter 🗸
 
         Python data types
 
@@ -174,3 +174,8 @@ def http_error(status):
         return "not found"
       case _:
       return "Check your nternet"
+
+you can combine several literals in a single pattern using | ("or")
+sample :
+case 401 | 402|404:
+  return "Not allowed"
